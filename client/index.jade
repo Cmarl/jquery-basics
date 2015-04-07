@@ -1,14 +1,77 @@
 doctype html
 html
   head
-    meta(charset='utf-8')      
+    meta(charset='utf-8')
     title jQuery Demo
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
     h1 jQuery Demo
-    
+
+    h1 Sentence Generator
+    button#clear Clear
+
+    h3 Articles
+    span.articles at
+    <br>
+    span.article the
+    <br>
+
+    h3 Nouns
+    span.noun dog
+    <br>
+    span.noun student
+    <br>
+    span.noun house
+    <br>
+    span.noun california
+    <br>
+
+    h3 Verbs
+    span.verb run
+    <br>
+    span.verb laugh
+    <br>
+    span.verb jump
+    <br>
+    span.verb study
+    <br>
+
+    h3 Adjectives
+    span.adjective large
+    <br>
+    span.adjective loud
+    <br>
+    span.adjective crazy
+    <br>
+
+    h3 Sentence
+    #sentence
+
+
+    input#numbers(type='text')
+    button#go Go
+    p sum
+    p#sum
+    p product
+    p#product
+
+    h1 Calculator
+    #calc
+      #calcContain
+        ul#calcList
+          li Number:
+            input#x
+          li Operator
+            input#op
+          li Number:
+            input#y
+        button#calcGo Calculate
+
+        p result:
+        p#result
+
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/lodash/lodash.min.js')
     script(src=isProd ? '/index.min.js' : '/index.js')
